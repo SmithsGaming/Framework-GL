@@ -56,4 +56,14 @@ public class FontRenderingGuiScreen implements GuiScreen {
     public void update() {
     }
 
+    @Override
+    public boolean isFullScreen () {
+        return false;
+    }
+
+    @Override
+    public boolean pausesGame () {
+        return false;
+    }
+
 }

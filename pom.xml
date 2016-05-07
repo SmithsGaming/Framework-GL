@@ -5,7 +5,7 @@
 
     <groupId>net.smert</groupId>
     <artifactId>Framework-GL</artifactId>
-    <version>0.5.0</version>
+    <version>0.5.1 - Transportmanager Version</version>
     <inceptionYear>2012</inceptionYear>
     <packaging>jar</packaging>
 
@@ -15,6 +15,13 @@
             <name>Jason Sorensen</name>
             <email>sorensenj@smert.net</email>
             <url>http://smert.net</url>
+        </developer>
+
+        <developer>
+            <id>OrionOnline</id>
+            <name>Marc Hermans</name>
+            <email>oriondevelopment@outlook.com</email>
+            <url>smithsmodding.com</url>
         </developer>
     </developers>
 
@@ -56,6 +63,11 @@
             <version>${jlayer.version}</version>
         </dependency>
         <dependency>
+            <groupId>com.badlogicgames.gdx</groupId>
+            <artifactId>gdx-bullet</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+        <dependency>
             <groupId>com.twelvemonkeys.imageio</groupId>
             <artifactId>imageio-jpeg</artifactId>
             <version>${twelvemonkeys.imageio.version}</version>
@@ -83,6 +95,24 @@
         <dependency>
             <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl</artifactId>
+            <version>${lwjgl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl-platform</artifactId>
+            <classifier>natives-windows</classifier>
+            <version>${lwjgl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl-platform</artifactId>
+            <classifier>natives-linux</classifier>
+            <version>${lwjgl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.lwjgl</groupId>
+            <artifactId>lwjgl-platform</artifactId>
+            <classifier>natives-osx</classifier>
             <version>${lwjgl.version}</version>
         </dependency>
         <dependency>
@@ -169,18 +199,4 @@
             </plugin>
         </plugins>
     </build>
-
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>${mavenjavadoc.version}</version>
-                <configuration>
-                    <author>false</author>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
-
 </project>

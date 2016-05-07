@@ -82,4 +82,14 @@ public class SimpleDebugGuiScreen implements GuiScreen {
         fpsTimeSpan.addToCurrentTime(1000000000L);
     }
 
+    @Override
+    public boolean isFullScreen () {
+        return false;
+    }
+
+    @Override
+    public boolean pausesGame () {
+        return false;
+    }
+
 }

@@ -148,4 +148,14 @@ public class HybridPixelOrVertexLitGuiScreen extends SimpleDebugGuiScreen {
         super.update();
     }
 
+    @Override
+    public boolean isFullScreen () {
+        return false;
+    }
+
+    @Override
+    public boolean pausesGame () {
+        return false;
+    }
+
 }

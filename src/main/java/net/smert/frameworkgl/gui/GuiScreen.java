@@ -26,4 +26,7 @@ public interface GuiScreen {
 
     public void update();
 
+    public boolean isFullScreen();
+
+    public boolean pausesGame();
 }
